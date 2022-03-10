@@ -8,18 +8,15 @@ pipeline{
         }
         stage("compile"){
             steps{
-            sh "mvn clean compile"
+            bat "mvn clean compile"
             }
         }
         
          stage("package"){
             steps{
-            sh "mvn package"
+            bat "mvn package"
             }
         }
        
-        }
-    }
-    }
-   
+	}
 }
